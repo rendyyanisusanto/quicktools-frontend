@@ -248,7 +248,7 @@ async function processPdf() {
       throw new Error(json.message || 'Gagal memproses konversi.');
     }
 
-    const backendBase = API_BASE.replace('/api', '');
+    const backendBase = API_BASE.replace(/\/api\/?$/, '');
     outputFiles.value = json.data.files.map((out) => ({
       fileName: out.fileName,
       downloadUrl: backendBase + out.downloadUrl,

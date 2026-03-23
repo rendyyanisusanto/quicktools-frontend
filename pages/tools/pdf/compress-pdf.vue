@@ -258,7 +258,7 @@ async function processPdf() {
       throw new Error(json.message || 'Gagal memproses file PDF.');
     }
 
-    const backendBase = API_BASE.replace('/api', '');
+    const backendBase = API_BASE.replace(/\/api\/?$/, '');
     resultData.value = {
       downloadUrl: backendBase + json.data.downloadUrl,
       fileName: json.data.fileName,

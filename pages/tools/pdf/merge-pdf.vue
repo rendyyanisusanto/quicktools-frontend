@@ -284,7 +284,7 @@ async function mergePdf() {
     }
 
     // Build full download URL using backend base
-    const backendBase = API_BASE.replace('/api', '');
+    const backendBase = API_BASE.replace(/\/api\/?$/, '');
     downloadUrl.value = backendBase + json.data.downloadUrl;
     state.value = 'success';
   } catch (err) {

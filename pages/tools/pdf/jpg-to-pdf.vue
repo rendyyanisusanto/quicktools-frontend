@@ -266,7 +266,7 @@ async function processImages() {
       throw new Error(json.message || 'Gagal mengubah gambar ke PDF.');
     }
 
-    const backendBase = API_BASE.replace('/api', '');
+    const backendBase = API_BASE.replace(/\/api\/?$/, '');
     resultUrl.value = backendBase + json.data.downloadUrl;
     state.value = 'success';
   } catch (err) {
