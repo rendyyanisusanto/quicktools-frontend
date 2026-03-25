@@ -76,6 +76,22 @@ export const TOOLS = [
     isPopular: false,
   },
   {
+    slug: 'pdf-to-word',
+    title: 'PDF ke Word',
+    description: 'Ubah file PDF menjadi dokumen Word (DOCX) yang bisa diedit langsung.',
+    category: 'pdf',
+    path: '/tools/pdf/pdf-to-word',
+    isPopular: true,
+  },
+  {
+    slug: 'word-to-pdf',
+    title: 'Word ke PDF',
+    description: 'Ubah file Word (DOCX/DOC) menjadi PDF yang rapi dan siap dibagikan.',
+    category: 'pdf',
+    path: '/tools/pdf/word-to-pdf',
+    isPopular: true,
+  },
+  {
     slug: 'compress-pdf',
     title: 'Compress PDF',
     description: 'Reduce PDF file size without losing quality.',
@@ -99,8 +115,26 @@ export const TOOLS = [
     path: '/tools/pdf/pdf-to-jpg',
     isPopular: false,
   },
+  {
+    slug: 'add-pdf-watermark',
+    title: 'Add PDF Watermark',
+    description: 'Tambahkan watermark teks ke halaman PDF secara mudah dan cepat.',
+    category: 'pdf',
+    path: '/tools/pdf/add-pdf-watermark',
+    isPopular: true,
+  },
 
   // Image Tools
+/*
+  {
+    slug: 'remove-background',
+    title: 'Remove Background',
+    description: 'Hapus background foto secara otomatis and unduh hasilnya dalam format PNG transparan.',
+    category: 'image',
+    path: '/tools/image/remove-background',
+    isPopular: true,
+  },
+*/
   {
     slug: 'compress-image',
     title: 'Compress Image',

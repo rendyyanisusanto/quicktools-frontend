@@ -3,6 +3,49 @@
  */
 
 export const IMAGE_TOOLS = [
+/*
+  {
+    slug: 'remove-background',
+    title: 'Remove Background',
+    shortDescription: 'Hapus background foto secara otomatis dan unduh hasilnya dalam format PNG transparan.',
+    seoTitle: 'Remove Background Online Gratis - Hapus Background Foto | QuickTools',
+    seoDescription: 'Hapus background gambar secara online dan gratis dengan cepat. Upload foto, lihat hasil sebelum dan sesudah, lalu download PNG transparan di QuickTools.',
+    path: '/tools/image/remove-background',
+    howToSteps: [
+      'Pilih gambar (JPG, PNG, atau WEBP) yang ingin dihapus latar belakangnya.',
+      'Sistem secara cerdas akan menganalisis foto dan menghapus background secara otomatis.',
+      'Bandingkan hasil menggunakan slider Sebelum/Sesudah yang tersedia.',
+      'Unduh hasil akhir berupa gambar PNG dengan background transparan.',
+    ],
+    faq: [
+      {
+        question: 'Apakah gratis?',
+        answer: 'Ya, penghapus latar belakang ini 100% gratis digunakan.',
+      },
+      {
+        question: 'Apakah foto saya disimpan?',
+        answer: 'Foto yang Anda unggah hanya diproses sementara dan akan segera dihapus dari server kami setelah selesai diunduh.',
+      },
+      {
+        question: 'Format apa yang didukung?',
+        answer: 'Kami mendukung format populer seperti image/jpeg, image/png, dan image/webp.',
+      },
+      {
+        question: 'Apakah hasil background transparan?',
+        answer: 'Tentu. File yang diunduh akan memiliki format PNG yang mendukung lapisan transparan dari latar yang terhapus.',
+      },
+      {
+        question: 'Apakah bisa dipakai di HP?',
+        answer: 'Alat ini didesain responsif, sehingga Anda bisa menggunakannya dengan nyaman melalui browser HP maupun komputer.',
+      },
+      {
+        question: 'Kenapa hasilnya berbeda untuk tiap foto?',
+        answer: 'Kecerdasan buatan (AI) kami bekerja maksimal jika ada kontras yang jelas antara objek utama (orang/benda) dengan background. Pada foto yang rumit atau blur, hasilnya mungkin kurang presisi.',
+      },
+    ],
+    relatedTools: ['jpg-to-png', 'crop-image'],
+  },
+*/
   {
     slug: 'compress-image',
     title: 'Compress Image',

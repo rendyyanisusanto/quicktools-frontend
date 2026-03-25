@@ -22,12 +22,12 @@ We avoid sending large user files to the backend. Instead, we use HTML5 Canvas A
 2. **Resize Image**: Calculates precise Aspect Ratios and redraws the image onto an accurately sized Canvas before exporting.
 3. **Crop Image**: Utilizes the excellent, lightweight `cropper.js` library to provide a premium interactive UI, finally extracting the cropped Canvas.
 4. **Format Converters**: `JPG to PNG` and `PNG to JPG` instantly redraw and export differing MIME types. Transparent PNGs are correctly flattened onto a white `#FFFFFF` background to prevent black artifacts when saving to JPEG.
+5. **Remove Background**: Uses the centralized Node.js gateway to forward the image securely to the Python Image Microservice where AI-powered `rembg` removes the background automatically, then the UI displays an interactive side-by-side slider comparison.
 
 ### Shared Assets
 - `ImageUploadZone.vue`: Specialized drag-and-drop component specifically for images.
 - `/data/imageTools.js`: Centralized source of truth for SEO titles, descriptions, How-to steps, and FAQ schemas to prevent hardcoded repetition.
-
-*Note: No Python is used anywhere in this module.*
+- `BeforeAfterPreview.vue`: Advanced slider to compare original and processed images seamlessly.
 
 ## WhatsApp Tools Module Overview
 

@@ -42,7 +42,7 @@ export const PDF_TOOLS = [
         answer: 'Ya, QuickTools bekerja di semua perangkat termasuk smartphone dan tablet.',
       },
     ],
-    relatedTools: ['split-pdf', 'compress-pdf', 'jpg-to-pdf', 'pdf-to-jpg'],
+    relatedTools: ['split-pdf', 'compress-pdf', 'jpg-to-pdf', 'pdf-to-jpg', 'pdf-to-word'],
   },
   {
     slug: 'split-pdf',
@@ -145,6 +145,126 @@ export const PDF_TOOLS = [
       },
     ],
     relatedTools: ['merge-pdf', 'jpg-to-pdf'],
+  },
+  {
+    slug: 'pdf-to-word',
+    title: 'PDF ke Word',
+    path: '/tools/pdf/pdf-to-word',
+    shortDescription: 'Ubah file PDF menjadi dokumen Word (DOCX) yang bisa diedit.',
+    seoTitle: 'PDF ke Word Online Gratis - Ubah PDF ke DOCX | QuickTools',
+    seoDescription:
+      'Ubah file PDF menjadi Word (DOCX) secara online dan gratis. Praktis untuk mengedit isi dokumen dengan lebih mudah di QuickTools.',
+    howToSteps: [
+      'Klik tombol "Pilih File PDF" atau seret file PDF ke area upload.',
+      'Pastikan file berformat PDF dan tidak melebihi 20MB.',
+      'Klik tombol "Konversi ke Word" dan tunggu proses selesai.',
+      'Klik tombol unduh untuk menyimpan file DOCX ke perangkatmu.',
+      'Buka file DOCX di Microsoft Word atau LibreOffice untuk mulai mengedit.',
+    ],
+    faq: [
+      {
+        question: 'Apakah layanan ini gratis?',
+        answer:
+          'Ya, konversi PDF ke Word di QuickTools sepenuhnya gratis tanpa perlu mendaftar atau berlangganan.',
+      },
+      {
+        question: 'Apakah file saya disimpan di server?',
+        answer:
+          'Tidak. File input dihapus segera setelah konversi selesai. File output juga dihapus secara berkala.',
+      },
+      {
+        question: 'Apakah hasil Word bisa langsung diedit?',
+        answer:
+          'Ya, file DOCX yang dihasilkan dapat dibuka dan diedit di Microsoft Word, LibreOffice Writer, atau Google Docs.',
+      },
+      {
+        question: 'Kenapa format hasil bisa berbeda dari PDF asli?',
+        answer:
+          'Konversi PDF ke Word adalah proses yang kompleks. PDF tidak menyimpan struktur dokumen seperti Word, sehingga tata letak, font, dan gambar pada hasil konversi bisa sedikit berbeda — terutama untuk PDF berbasis gambar atau yang menggunakan layout kompleks.',
+      },
+      {
+        question: 'Apakah bisa dipakai di HP?',
+        answer:
+          'Ya, QuickTools bekerja di semua perangkat termasuk smartphone dan tablet melalui browser.',
+      },
+    ],
+    relatedTools: ['merge-pdf', 'split-pdf', 'compress-pdf', 'jpg-to-pdf', 'word-to-pdf'],
+  },
+  {
+    slug: 'word-to-pdf',
+    title: 'Word ke PDF',
+    path: '/tools/pdf/word-to-pdf',
+    shortDescription: 'Ubah file Word (DOCX/DOC) menjadi PDF yang rapi dan siap dibagikan.',
+    seoTitle: 'Word ke PDF Online Gratis - Ubah DOCX ke PDF | QuickTools',
+    seoDescription:
+      'Ubah file Word (DOCX/DOC) ke PDF secara online dan gratis dengan cepat. Bebas instal aplikasi, hasil rapi untuk keperluan sekolah, kerja, atau administrasi di QuickTools.',
+    howToSteps: [
+      'Pilih atau seret file Word (.docx atau .doc) kamu ke area upload.',
+      'Tunggu beberapa detik selagi sistem mengkonversi file.',
+      'Format dan tata letak dokumenmu akan otomatis terkunci di PDF.',
+      'Klik tombol "Unduh File PDF" untuk menyimpannya.',
+    ],
+    faq: [
+      {
+        question: 'Apakah hasil PDF akan sama persis dengan file Word saya?',
+        answer: 'Dalam banyak kasus, tata letak, margin, dan gambar akan tetap persis seperti aslinya karena kami menggunakan LibreOffice Engine.',
+      },
+      {
+        question: 'Format dokumen apa saja yang didukung?',
+        answer: 'Saat ini, sistem kami mendukung penuh konversi dari format .docx dan format lama .doc.',
+      },
+      {
+        question: 'Apakah file Word saya disimpan?',
+        answer: 'Privasi adalah prioritas kami. File asal dan hasil PDF akan otomatis terhapus dari server segera setelah konversi selesai.',
+      },
+      {
+        question: 'Apakah layanan ini gratis?',
+        answer: 'Ya, benar-benar gratis tanpa perlu mendaftar.',
+      },
+      {
+        question: 'Apakah bisa dipakai di HP?',
+        answer: 'Ya, QuickTools bisa digunakan lewat browser HP (Android & iOS).',
+      },
+    ],
+    relatedTools: ['pdf-to-word', 'merge-pdf', 'compress-pdf', 'split-pdf'],
+  },
+  {
+    slug: 'add-pdf-watermark',
+    title: 'Add PDF Watermark',
+    path: '/tools/pdf/add-pdf-watermark',
+    shortDescription: 'Tambahkan watermark teks ke file PDF secara online dan gratis.',
+    seoTitle: 'Tambah Watermark PDF Online Gratis - Beri Tanda pada PDF | QuickTools',
+    seoDescription: 'Tambahkan watermark teks ke file PDF secara online dan gratis. Cocok untuk dokumen sekolah, laporan, arsip, invoice, dan file administrasi lainnya di QuickTools.',
+    howToSteps: [
+      'Pilih atau seret file PDF yang ingin diberi watermark.',
+      'Masukkan teks watermark (misalnya: RAHASIA, DRAFT).',
+      'Atur posisi, ukuran, warna, putaran, dan transparansi watermark sesuai kebutuhan.',
+      'Klik tombol "Terapkan Watermark" dan tunggu proses selesai.',
+      'Unduh file PDF yang sudah dibubuhkan watermark.',
+    ],
+    faq: [
+      {
+        question: 'Apakah gratis?',
+        answer: 'Ya, layanan perlindungan dengan penambahan watermark ke PDF ini sepenuhnya gratis.',
+      },
+      {
+        question: 'Apakah file PDF saya aman?',
+        answer: 'Sangat aman. File PDF yang Anda unggah dan hasil konversinya akan langsung terhapus dari server kami setelah proses selesai.',
+      },
+      {
+        question: 'Apakah watermark ditambahkan ke semua halaman?',
+        answer: 'Ya, sistem kami akan secara otomatis membubuhkan teks watermark pada setiap halaman di dalam dokumen PDF Anda.',
+      },
+      {
+        question: 'Apakah bisa dipakai di HP?',
+        answer: 'Tentu. Anda dapat langsung menggunakan alat ini melalui browser web di smartphone Android maupun iOS tanpa perlu instalasi aplikasi tambahan.',
+      },
+      {
+        question: 'Bisakah saya menambahkan watermark teks?',
+        answer: 'Fungsi utama tool ini difokuskan penuh untuk memberikan perlindungan tambahan berbasis teks secara fleksibel dan aman.',
+      },
+    ],
+    relatedTools: ['merge-pdf', 'split-pdf', 'compress-pdf', 'word-to-pdf'],
   },
 ];
 
