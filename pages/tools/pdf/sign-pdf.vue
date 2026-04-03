@@ -95,9 +95,8 @@ const initPdfRenderer = async () => {
     try {
       pdfjsLib = await import('pdfjs-dist');
       
-      // Load local worker explicitly using Vite's URL import
-      const workerUrl = await import('pdfjs-dist/build/pdf.worker.min.mjs?url');
-      pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl.default || workerUrl;
+      // Use stable CDN worker matching the downgraded 3.11.174 version to avoid Nuxt Vite bundling complexity
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
       const arrayBuffer = await pdfFile.value.arrayBuffer();
       pdfDocumentObj = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
