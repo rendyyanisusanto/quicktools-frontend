@@ -545,12 +545,9 @@ async function signPdf() {
 
   try {
     const formData = new FormData();
-    formData.append('pdf', originalPdfFile.value); // multer usually expects array or specific fields. Let's see the proxy expects any array of files!
-    // Wait, proxy uses handleUpload which uses array('files', 10). So we must append both to 'files[]' or 'files'
-    
     const sigBlob = dataURLtoBlob(finalImageSrc.value);
     
-    // We must send both with key 'files' to match upload.middleware.js!
+    // We must send both with key 'files' to match upload.middleware.js
     formData.append('files', originalPdfFile.value);
     formData.append('files', sigBlob, 'signature.png');
     
