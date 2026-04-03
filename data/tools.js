@@ -136,6 +136,14 @@ export const TOOLS = [
   },
 */
   {
+    slug: 'pas-foto-generator',
+    title: 'Pas Foto Generator',
+    description: 'Buat pas foto ukuran 2x3, 3x4, 4x6 dengan background merah atau biru. Siap cetak!',
+    category: 'image',
+    path: '/tools/image/pas-foto-generator',
+    isPopular: true,
+  },
+  {
     slug: 'compress-image',
     title: 'Compress Image',
     description: 'Reduce image file size while keeping it visually sharp.',

@@ -3,6 +3,44 @@
  */
 
 export const IMAGE_TOOLS = [
+  {
+    slug: 'pas-foto-generator',
+    title: 'Pas Foto Generator',
+    shortDescription: 'Buat pas foto ukuran 2x3, 3x4, dan 4x6 secara online gratis dengan background merah atau biru.',
+    seoTitle: 'Pas Foto Online 3x4, 4x6 Gratis - Ubah Foto Jadi Pas Foto | QuickTools',
+    seoDescription: 'Ubah foto menjadi pas foto ukuran 2x3, 3x4, dan 4x6 secara online gratis. Pilih background merah atau biru, hasil siap cetak di QuickTools.',
+    path: '/tools/image/pas-foto-generator',
+    howToSteps: [
+      'Upload foto dari perangkat Anda (JPG, PNG, atau WEBP, maksimal 20MB).',
+      'Pilih ukuran pas foto yang dibutuhkan: 2x3, 3x4, atau 4x6.',
+      'Pilih warna background yang diinginkan: merah atau biru.',
+      'Klik tombol "Generate Pas Foto" dan tunggu beberapa detik.',
+      'Lihat hasil perbandingan sebelum dan sesudah, lalu unduh hasilnya.',
+    ],
+    faq: [
+      {
+        question: 'Apakah gratis?',
+        answer: 'Ya, Pas Foto Generator ini 100% gratis tanpa batasan penggunaan harian.',
+      },
+      {
+        question: 'Apakah bisa ganti background?',
+        answer: 'Tentu. Anda bisa memilih background merah atau biru sesuai ketentuan dokumen yang dibutuhkan.',
+      },
+      {
+        question: 'Ukuran apa saja tersedia?',
+        answer: 'Tersedia tiga ukuran standar: 2x3 cm, 3x4 cm, dan 4x6 cm yang umum digunakan untuk dokumen resmi Indonesia.',
+      },
+      {
+        question: 'Apakah hasilnya siap cetak?',
+        answer: 'Ya. Hasil gambar dihasilkan dengan resolusi dan DPI yang cukup untuk keperluan cetak standar.',
+      },
+      {
+        question: 'Apakah bisa di HP?',
+        answer: 'Ya. Halaman ini sepenuhnya responsif dan dapat digunakan melalui browser HP maupun komputer.',
+      },
+    ],
+    relatedTools: ['compress-image', 'crop-image', 'resize-image'],
+  },
 /*
   {
     slug: 'remove-background',
