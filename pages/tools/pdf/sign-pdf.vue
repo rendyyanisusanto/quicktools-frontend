@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive, computed, onMounted, nextTick } from 'vue';
+import { ref, reactive, computed, onMounted, nextTick, shallowRef } from 'vue';
 import { useSeoMeta, useRuntimeConfig } from '#imports';
 import { getPdfTool } from '~/data/pdfTools.js';
 
@@ -25,7 +25,7 @@ const errorMessage = ref('');
 const resultUrl = ref('');
 
 // PDF Viewer State
-const pdfDocument = ref(null);
+const pdfDocument = shallowRef(null);
 const totalPages = ref(1);
 const currentPage = ref(1);
 const pdfCanvas = ref(null);
