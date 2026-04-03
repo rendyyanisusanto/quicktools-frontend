@@ -220,8 +220,8 @@ const applySignature = async () => {
   errorMessage.value = '';
   
   const formData = new FormData();
-  formData.append('pdfFile', pdfFile.value);
-  formData.append('sigFile', signatureFile.value);
+  formData.append('files', pdfFile.value);
+  formData.append('files', signatureFile.value);
   formData.append('page', currentPage.value);
   
   // Passing exact coordinate mapping info
