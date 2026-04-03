@@ -300,6 +300,44 @@ export const PDF_TOOLS = [
     ],
     relatedTools: ['pdf-to-word', 'add-pdf-watermark', 'compress-pdf', 'word-to-pdf'],
   },
+  {
+    slug: 'sign-pdf',
+    title: 'Sign PDF',
+    path: '/tools/pdf/sign-pdf',
+    shortDescription: 'Tempel tanda tangan ke dokumen PDF menggunakan fitur drag & drop visual.',
+    seoTitle: 'Sign PDF Online & Tempel Tanda Tangan Drag Drop | QuickTools',
+    seoDescription: 'Tempel tanda tangan secara online ke file PDF menggunakan fitur drag & drop. Bebas atur ukuran/posisi tanda tangan tanpa instal aplikasi. Gratis dan aman.',
+    howToSteps: [
+      'Upload Dokumen PDF yang ingin diberi tanda tangan (Maks. 20MB).',
+      'Unggah gambar tanda tangan Anda yang berformat PNG, JPG, atau WebP.',
+      'Pilih di halaman PDF keberapa tanda tangan tersebut akan ditempelkan.',
+      'Tanda tangan akan muncul sebagai overlay. Klik, panjangkan ukurannya, dan geser (drag) ke posisi yang tepat.',
+      'Klik tombol "Terapkan Tanda Tangan" lalu unduh PDF hasil signature Anda.',
+    ],
+    faq: [
+      {
+        question: 'Apa itu tool Sign PDF QuickTools?',
+        answer: 'Ini adalah fitur instan yang memungkinkan Anda mengunggah gambar tanda tangan Anda, memposisikannya bebas di atas halaman PDF, lalu menyematkannya secara permanen.',
+      },
+      {
+        question: 'Apakah saya bisa memindahkan tanda tangan ke posisi bebas di PDF?',
+        answer: 'Ya! Fitur utama dari tool ini adalah Drag and Drop (geser dan lepas), sehingga Anda bisa meletakkan tanda tangan dengan akurasi tinggi.',
+      },
+      {
+        question: 'Format tanda tangan apa yang disarankan?',
+        answer: 'Kami sangat merekomendasikan format PNG transparan agar tanda tangan Anda menyatu sempurna dengan dokumen asli tanpa menutupi teks PDF.',
+      },
+      {
+        question: 'Apakah file PDF kontrak/kerja saya aman?',
+        answer: 'Sangat aman. Privasi pengguna adalah prioritas. PDF & tanda tangan yang diupload serta PDF hasilnya akan segera dihapus otomatis dari server Proxy kami.',
+      },
+      {
+        question: 'Apakah saya bisa menggunakan tool Sign PDF di handphone?',
+        answer: 'Tentu. Area overlay tanda tangan kami ramah sentuhan, jadi Anda tetap bisa menggesernya secara akurat dari layar ponsel bersistem Android maupun iOS.',
+      },
+    ],
+    relatedTools: ['e-signature-maker', 'remove-background', 'merge-pdf', 'compress-pdf'],
+  },
 ];
 
 /** Get a single PDF tool by slug */

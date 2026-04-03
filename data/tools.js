@@ -131,6 +131,14 @@ export const TOOLS = [
     path: '/tools/pdf/e-signature-maker',
     isPopular: true,
   },
+  {
+    slug: 'sign-pdf',
+    title: 'Sign PDF',
+    description: 'Tempel tanda tangan ke PDF dengan drag & drop secara presisi, lalu download hasilnya.',
+    category: 'pdf',
+    path: '/tools/pdf/sign-pdf',
+    isPopular: true,
+  },
 
   // Image Tools
 /*
