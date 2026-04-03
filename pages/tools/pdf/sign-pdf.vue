@@ -25,7 +25,7 @@ const errorMessage = ref('');
 const resultUrl = ref('');
 
 // PDF Viewer State
-const pdfDocument = shallowRef(null);
+let pdfDocumentObj = null;
 const totalPages = ref(1);
 const currentPage = ref(1);
 const pdfCanvas = ref(null);
@@ -100,8 +100,8 @@ const initPdfRenderer = async () => {
       pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl.default || workerUrl;
 
       const arrayBuffer = await pdfFile.value.arrayBuffer();
-      pdfDocument.value = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
-      totalPages.value = pdfDocument.value.numPages;
+      pdfDocumentObj = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+      totalPages.value = pdfDocumentObj.numPages;
       
       renderPage(currentPage.value);
     } catch (err) {
@@ -113,10 +113,10 @@ const initPdfRenderer = async () => {
 
 // Render specific page
 const renderPage = async (pageNumber) => {
-  if (!pdfDocument.value || !pdfCanvas.value || !pdfContainer.value) return;
+  if (!pdfDocumentObj || !pdfCanvas.value || !pdfContainer.value) return;
   
   try {
-    const page = await pdfDocument.value.getPage(pageNumber);
+    const page = await pdfDocumentObj.getPage(pageNumber);
     
     // Calculate scale to fit container width. The max container width is roughly device width or max 800px.
     const containerClientWidth = pdfContainer.value.clientWidth;
@@ -263,7 +263,7 @@ const resetTool = () => {
   signatureImgSrc.value = '';
   resultUrl.value = '';
   errorMessage.value = '';
-  pdfDocument.value = null;
+  pdfDocumentObj = null;
 };
 </script>
 
