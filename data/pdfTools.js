@@ -266,6 +266,40 @@ export const PDF_TOOLS = [
     ],
     relatedTools: ['merge-pdf', 'split-pdf', 'compress-pdf', 'word-to-pdf'],
   },
+  {
+    slug: 'e-signature-maker',
+    title: 'E-Signature Maker',
+    path: '/tools/pdf/e-signature-maker',
+    shortDescription: 'Buat tanda tangan digital online, unduh sebagai PNG transparan atau tempel ke PDF.',
+    seoTitle: 'E-Signature Maker - Buat Tanda Tangan Digital & Sign PDF Online | QuickTools',
+    seoDescription: 'Buat tanda tangan digital secara online. Unduh tanda tangan PNG transparan atau tempel langsung tanda tangan ke file PDF kamu dengan mudah.',
+    howToSteps: [
+      'Gunakan tab "Create Signature" untuk menggambar, mengetik, atau mengunggah tanda tanganmu.',
+      'Unduh hasilnya sebagai PNG (Transparan/Putih).',
+      'Pindah ke tab "Sign PDF" untuk menempelkan tanda tangan.',
+      'Unggah file PDF dan atur posisi tanda tangan pada dokumen.',
+      'Klik tombol "Terapkan Tanda Tangan" lalu unduh hasilnya.',
+    ],
+    faq: [
+      {
+        question: 'Apakah hasil tanda tangan saya disimpan di server?',
+        answer: 'Tidak, kami sangat menghargai privasi Anda. Jika Anda membuat tanda tangan, itu diproses langsung di browser (client-side) atau langsung dihapus dari server setelah PDF diberi tanda tangan.',
+      },
+      {
+        question: 'Bisakah saya menggunakan tanda tangan untuk dokumen resmi?',
+        answer: 'Tanda tangan digital ini (e-signature) valid secara umum untuk sebagian besar dokumen administratif non-eMeterai. Namun, ini belum memuat cryptographic certification (digital signature certificate) lanjutan.',
+      },
+      {
+        question: 'Bisakah layanan ini diakses di smartphone?',
+        answer: 'Tentu! Anda bisa menggambar tanda tangan Anda dengan rapi menggunakan layar sentuh di ponsel atau tablet.',
+      },
+      {
+        question: 'Apakah fitur "Sign PDF" mendukung semua jenis PDF?',
+        answer: 'Sebagian besar PDF berstandar ISO didukung. Namun, dokumen PDF yang diproteksi password perlu di-unlock terlebih dahulu.',
+      },
+    ],
+    relatedTools: ['pdf-to-word', 'add-pdf-watermark', 'compress-pdf', 'word-to-pdf'],
+  },
 ];
 
 /** Get a single PDF tool by slug */

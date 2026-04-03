@@ -123,6 +123,14 @@ export const TOOLS = [
     path: '/tools/pdf/add-pdf-watermark',
     isPopular: true,
   },
+  {
+    slug: 'e-signature-maker',
+    title: 'E-Signature Maker',
+    description: 'Buat tanda tangan digital online, download PNG transparan, atau tempel ke dokumen PDF.',
+    category: 'pdf',
+    path: '/tools/pdf/e-signature-maker',
+    isPopular: true,
+  },
 
   // Image Tools
 /*
