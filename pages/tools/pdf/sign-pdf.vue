@@ -286,8 +286,8 @@ const resetTool = () => {
         
         <!-- STEP 1: UPLOAD PDF -->
         <div v-if="step === 1" class="text-center">
-          <label class="block cursor-pointer flex flex-col items-center justify-center p-12 border-2 border-dashed border-primary/50 text-gray-600 rounded-xl bg-gray-50 hover:bg-primary/5 hover:border-primary transition duration-300">
-            <svg class="w-16 h-16 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <label class="block cursor-pointer flex flex-col items-center justify-center p-12 border-2 border-dashed border-blue-600/50 text-gray-600 rounded-xl bg-gray-50 hover:bg-blue-600/5 hover:border-blue-600 transition duration-300">
+            <svg class="w-16 h-16 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
             </svg>
             <span class="text-xl font-semibold mb-2">Pilih File PDF Anda</span>
@@ -300,11 +300,11 @@ const resetTool = () => {
         <div v-if="step === 2" class="text-center">
           <div class="flex items-center justify-between mb-6">
             <h3 class="text-lg font-semibold text-gray-700">Langkah 2: Unggah Tanda Tangan</h3>
-            <button @click="step = 1" class="text-sm text-primary hover:underline">Ganti PDF</button>
+            <button @click="step = 1" class="text-sm text-blue-600 hover:underline">Ganti PDF</button>
           </div>
           
-          <label class="block cursor-pointer flex flex-col items-center justify-center p-10 border-2 border-dashed border-secondary/50 text-gray-600 rounded-xl bg-gray-50 hover:bg-secondary/5 hover:border-secondary transition duration-300">
-            <svg class="w-16 h-16 text-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <label class="block cursor-pointer flex flex-col items-center justify-center p-10 border-2 border-dashed border-indigo-600/50 text-gray-600 rounded-xl bg-gray-50 hover:bg-indigo-600/5 hover:border-indigo-600 transition duration-300">
+            <svg class="w-16 h-16 text-indigo-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
             </svg>
             <span class="text-xl font-semibold mb-2">Pilih Gambar Tanda Tangan</span>
@@ -312,7 +312,7 @@ const resetTool = () => {
             <input type="file" accept="image/png, image/jpeg, image/webp" class="hidden" @change="handleSignatureUpload" />
           </label>
           <p class="mt-4 text-sm text-gray-500">
-            Belum punya PNG Tanda Tangan? Gunakan tool <NuxtLink to="/tools/pdf/e-signature-maker" target="_blank" class="text-primary hover:underline font-medium">E-Signature Maker</NuxtLink> kami.
+            Belum punya PNG Tanda Tangan? Gunakan tool <NuxtLink to="/tools/pdf/e-signature-maker" target="_blank" class="text-blue-600 hover:underline font-medium">E-Signature Maker</NuxtLink> kami.
           </p>
         </div>
 
@@ -389,7 +389,7 @@ const resetTool = () => {
             <button @click="resetTool" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition w-full sm:w-auto">
               Batal
             </button>
-            <button @click="applySignature" :disabled="isProcessing" class="px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition w-full sm:flex-1 flex justify-center items-center">
+            <button @click="applySignature" :disabled="isProcessing" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-600/90 transition w-full sm:flex-1 flex justify-center items-center">
               <svg v-if="isProcessing" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                 <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
@@ -411,11 +411,11 @@ const resetTool = () => {
           <p class="text-gray-600 mb-8">Tanda tangan Anda berhasil ditempelkan dengan akurat.</p>
           
           <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a :href="resultUrl" download class="px-8 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition shadow-lg shadow-primary/30 flex items-center justify-center">
+            <a :href="resultUrl" download class="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-600/90 transition shadow-lg shadow-primary/30 flex items-center justify-center">
               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
               Download PDF Final
             </a>
-            <button @click="resetTool" class="px-8 py-3 text-primary border border-primary/30 font-medium rounded-lg hover:bg-primary/5 transition flex items-center justify-center">
+            <button @click="resetTool" class="px-8 py-3 text-blue-600 border border-blue-600/30 font-medium rounded-lg hover:bg-blue-600/5 transition flex items-center justify-center">
               Tandatangani Dokumen Lain
             </button>
           </div>
@@ -426,7 +426,7 @@ const resetTool = () => {
       <!-- FAQ Section -->
       <div v-if="toolData && toolData.faq" class="mt-16 max-w-3xl mx-auto">
         <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-          <svg class="w-6 h-6 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           FAQ
         </h3>
         <div class="space-y-4">
